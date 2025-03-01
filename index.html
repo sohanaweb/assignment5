@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Hello Boss</h1>
-    <p>This is First</p>
+<body class="bg-gray-100 transition-colors duration-500">
+    <nav class="flex justify-between items-center bg-white p-4 shadow-md rounded-lg m-4">
+        <div class="flex items-center font-bold text-lg text-gray-800">
+            <img src="./assets/logo.png" alt="logo" class="w-6 h-6 mr-2">
+            Dev <strong>Board</strong>
+
+        </div>
+<div class="flex items-center gap-4">
+<span class="bg-blue-100 px-2 w-8 h-8 rounded-full flex items-center gap-2">
+    <input type="checkbox" checked class="accent-blue-500"> <br>
+    <span>23</span>
+
+</span> <br>
+<button class="w-8 h-8 rounded-full border-none cursor-pointer transition-transform active:scale-90">
+
+<img src="./assets/theme-btn.png" alt="btn" onclick="changeBackgroundColor()">
+
+
+</button>
+</div>
+         
+    </nav>
+    <script src="./test.js"></script>
 </body>
 </html>
