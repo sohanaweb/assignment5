@@ -8,52 +8,31 @@ const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
         }
 
 
-        // // real time date 
-        // function getCurrentDate() {
-        //     const date = new Date();
-        //     const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
-        //     const formattedDate = date.toLocaleDateString('en-US', options);
-        
-        //     // Split the formatted date
-        //     const parts = formattedDate.split(',');
-            
-        //     // Set the day of the week with comma
-        //     document.getElementById('dayOfWeek').textContent = parts[0] + ',';
-            
-        //     // Set the date and year (Trim removes extra spaces)
-        //     document.getElementById('currentDate').textContent = parts[1].trim() + ',' + parts[2];
-        // }
-        
-        // getCurrentDate();
-
-
-
-
 
 
         document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("current-date").textContent = new Date().toDateString();
-            var taskAssignedCount = 6;
-            var completedTasksCount = 23;
-            var taskCounterElement = document.getElementById("task-assigned-count");
-            var navbarCounterElement = document.getElementById("navbar-task-count");
-            var completeButtons = document.querySelectorAll(".complete-task");
-            var activityLog = document.getElementById("activity-log");
-            var clearLog = document.getElementById("clear-log");
-
-            for (var i = 0; i < completeButtons.length; i++) {
+            document.getElementById("current_date").textContent = new Date().toDateString();
+            let taskAssignedCount = 6;
+            let completedTasksCount = 23;
+            let taskCounterElement = document.getElementById("task-assigned-count");
+            let navbarCounterElement = document.getElementById("navbar-task-count");
+            let completeButtons = document.querySelectorAll(".complete-task");
+            let activityLog = document.getElementById("activity-log");
+            let clearLog = document.getElementById("clear-log");
+    
+            for (let i = 0; i < completeButtons.length; i++) {
                 completeButtons[i].onclick = function () {
                     if (!this.disabled) {
-                        var taskName = this.parentNode.querySelector("h3").textContent;
+                        let taskName = this.parentNode.querySelector("h3").textContent;
                         alert("You have updated Task: " + taskName);
                         taskAssignedCount--;
                         completedTasksCount++;
                         taskCounterElement.textContent = taskAssignedCount;
                         navbarCounterElement.textContent = completedTasksCount;
                         this.disabled = true;
-                        this.textContent = "Completed ✅";
+                        this.textContent = "Completed";
                         this.classList.add("opacity-50", "cursor-not-allowed");
-                        var logEntry = document.createElement("p");
+                        let logEntry = document.createElement("p");
                         logEntry.textContent = "You have completed: " + taskName + " at " + new Date().toLocaleTimeString();
                         activityLog.appendChild(logEntry);
                         
@@ -65,4 +44,14 @@ const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
             }
             clearLog.onclick = function () { activityLog.innerHTML = ""; };
         });
-        
+    
+
+
+   
+
+
+
+
+
+
+       

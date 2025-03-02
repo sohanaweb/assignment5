@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>a 5</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg">
+<body class="bg-gray-100">
     <nav class="flex justify-between items-center bg-white p-4 shadow-md rounded-lg m-4">
         <div class="flex items-center font-bold text-lg text-gray-800">
             <img src="./assets/logo.png" alt="Logo" class="w-6 h-6 mr-2">
@@ -32,7 +32,9 @@
             <div class="flex space-x-4 bg-white p-4 rounded-xl shadow-md">
                 <!-- Task Assigned -->
                 <div class="flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg">
-                    <div class="w-6 h-6 flex items-center justify-center bg-blue-500 text-white rounded-md">✔</div>
+                   <span class= "bg-blue-100 px-3 py-1 rounded-full flex items-center gap-2">
+                    <input type="checkbox" checked class="accent-blue-500">
+                   </span>
                     <div>
                         <p class="text-xs text-gray-500">Task Assigned</p>
                         <p class="text-lg font-semibold" id="task-assigned-count">06</p>
@@ -43,7 +45,7 @@
 
 <div class="flex items-center bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 rounded-lg">
                         <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="Calendar" class="w-6 h-6 mr-2">
-                        <p class="font-semibold">Discover Something New Today!</p>
+                        <a href="blog.html" class="font-semibold" >Discover Something New Today! </a>
                     </div>
                      
                      <!-- Date Section  -->
@@ -62,13 +64,92 @@
 
     <div class="w-full  bg-gray-100 p-4 rounded-lg mx-auto shadow">
         <h3 class="font-semibold mb-2">Activity Log</h3>
-        <button id="clear-log" class="text-sm bg-red-500 text-white px-3 py-1 rounded mb-2">Clear History</button>
+        <button id="clear-log" class="text-sm bg-blue-500 text-white px-3 py-1 rounded mb-2">Clear History</button>
         <div id="activity-log" class="text-sm text-gray-700"></div>
     </div>
     </div>
 
 
 
+<!-- task1 -->
+    <div class=" p-4" >
+        
+        <div class="p-4 bg-white shadow rounded-lg">
+            <div class="bg-blue-100 text-blue-600 px-2 py-1 rounded-lg text-sm inline-block">ShopEase</div>
+        <h3 class="font-semibold">UI Enhancement</h3>
+        <p class="text-sm text-gray-600">Refactor button styles.Refactor button styles</p>
+        <p class="text-xs text-gray-500">Deadline: 22 March 2025</p>
+        <button class="complete-task mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg">Complete</button>
+    </div>
+</div>
+       <!-- task2 -->
+    <div class="p-4 ">
+        <div class="p-4 bg-white shadow rounded-lg">
+            <div class="bg-blue-100 text-blue-600 px-2 py-1 rounded-lg text-sm inline-block">CloudSync</div>
+            <h3 class="font-semibold">Performance Optimization</h3>
+            <p class="text-sm text-gray-600">Reduce load time.Reduce load time Reduce load time</p>
+            <p class="text-xs text-gray-500">Deadline: 22 March 2025</p>
+            <button class="complete-task mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg">Complete</button>
+        </div>    
+    </div>
+       <!-- task3 -->
+    <div class=" p-4">
+
+        <div class="p-4 bg-white shadow rounded-lg">
+            <div class="bg-blue-100 text-blue-600 px-2 py-1 rounded-lg text-sm inline-block">Meta</div>
+            <h3 class="font-semibold">Security Update</h3>
+            <p class="text-sm text-gray-600">Patch vulnerabilities.</p>
+            <p class="text-xs text-gray-500">Deadline: 22 March 2025</p>
+            <button class="complete-task mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg">Complete</button>
+        </div>
+    </div>
+       <!-- task4 -->
+    <div class=" p-4 ">
+        <div class="p-4 bg-white shadow rounded-lg">
+            
+            <div class="bg-blue-100 text-blue-600 px-2 py-1 rounded-lg text-sm inline-block">SwiftPay</div>
+            <h3 class="font-semibold">Database Cleanup</h3>
+            <p class="text-sm text-gray-600">Remove outdated entries.</p>
+            <p class="text-xs text-gray-500">Deadline: 22 April 2025</p>
+            <button class="complete-task mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg">Complete</button>
+        </div>    
+    </div>
+       <!-- task5 -->
+    <div class=" p-4 ">
+        <div class="p-4 bg-white shadow rounded-lg">
+            <div class="bg-blue-100 text-blue-600 px-2 py-1 rounded-lg text-sm inline-block">Google LLC</div>
+            <h3 class="font-semibold">Bug Fixing</h3>
+            <p class="text-sm text-gray-600">Resolve known issues.Resolve known issues.Resolve known issues.</p>
+            <p class="text-xs text-gray-500">Deadline: 22 mAy 2025</p>
+            <button class="complete-task mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg">Complete</button>
+        </div>    
+    
+    </div>
+       <!-- task6 -->
+    <div class=" p-4 "> <div class="p-4 bg-white shadow rounded-lg">
+        <div class="bg-blue-100 text-blue-600 px-2 py-1 rounded-lg text-sm inline-block">Glassdoor</div>
+        <h3 class="font-semibold">Debug using Chrome DevTools</h3>
+        <p class="text-sm text-gray-600">Remove outdated entries.Remove outdated entries Remove outdated entries</p>
+        <p class="text-xs text-gray-500">Deadline: 22 june 2025</p>
+        <button class="complete-task mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg">Complete</button>
+    </div> </div>
+  </div>
+
+
+
+
+
+  
+   
+
+  
+
+
     <script src="./test.js"></script>
+
+
+
+
+
 </body>
 </html>
