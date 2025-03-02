@@ -31,7 +31,7 @@ const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
                         navbarCounterElement.textContent = completedTasksCount;
                         this.disabled = true;
                         this.textContent = "Completed";
-                        this.classList.add("opacity-50", "cursor-not-allowed");
+                        this.classList.add("opacity-30", "cursor-not-allowed");
                         let logEntry = document.createElement("p");
                         logEntry.textContent = "You have completed: " + taskName + " at " + new Date().toLocaleTimeString();
                         activityLog.appendChild(logEntry);
